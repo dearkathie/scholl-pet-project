@@ -1,0 +1,34 @@
+# Site settings
+name: Школа 515
+email: mail@gou515.spb.ru
+description: Школа №515 с углублённым изучением немецкого языка имени Иоганна Вольфганга Гёте (Гётешуле)
+baseurl: "" # the subpath of your site, e.g. /blog/
+siteurl: "http://gou515.spb.ru"
+
+permalink: pretty
+
+exclude: ['Gemfile*', 'README.md', '.sass-cache', 'nginx-default.conf']
+
+# Build settings
+markdown: kramdown
+
+paginate: 6
+paginate_path: "/blog/:num/"
+
+sass:
+    style: compact
+    source_map: true
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      is_post: true
+      permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-assets
+  - jekyll-paginate
+
