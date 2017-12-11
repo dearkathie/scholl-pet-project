@@ -1,0 +1,118 @@
+#customers {
+
+    .capabilities{
+        margin: 0 auto 15px;
+    }
+    .case-title {
+        text-align: center;
+        margin-top: rem-calc(80);
+        @media(max-width: 768px) {
+            margin-top: 40px;
+        }
+        @media(max-width: 440px) {
+            margin-top: 0;
+        }
+    }
+
+    .customer-success{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .persuation-strategy {
+        @media(min-width:1440px){
+        width: 1281px;
+        margin: 0 auto;}
+    }
+
+    .customer-icons {
+        text-align: center;
+        display: flex;
+        margin: rem-calc(0 90 60);
+        padding: 0 !important;
+        @media(min-width: 1440px) {
+            width: 1280px;
+            margin: 0 auto 50px;
+        }
+        @media(max-width: 992px) {
+            margin: rem-calc(0 30 60) !important;
+        }
+        @media(max-width: 768px) {
+            margin: 0 !important;
+        }
+        @media(max-width: 440px) {
+            display: block;
+            margin: 0 !important;
+        }
+        .img-logo {
+            margin: rem-calc(60 0 40);
+            height: 70px;
+        }
+
+        .img-case {
+            margin: rem-calc(60 0 30);
+            width: 78px;
+            height: 76px;
+        }
+        .icon-text{
+            flex: 1;
+            margin: 0 20px;
+        }
+        @media(max-width: 768px) {
+            .img-logo {
+                margin: rem-calc(30 0);
+                height: 50px;
+            }
+            .icon-text{
+                margin: 0 0 20px;
+            }
+            .img-case {
+                margin: rem-calc(20 0 0);
+            }
+        }
+
+    }
+
+
+        .customers-we-love{
+            margin: 70px 225px 120px;
+    
+            .big-screen {
+                display: block;
+            }
+            .mobile{
+                display: none;
+            }
+    
+            @media(min-width: 1440px) {
+                width: 1000px;
+                padding-top: 50px;
+                margin: 0 auto 90px;
+            
+            }
+            @media(max-width: 992px) {
+                margin: rem-calc(50 30 90) !important;
+            }
+    
+            @media(max-width: 440px) {
+                .big-screen {
+                    display: none;
+                }
+                .mobile{
+                    width: 80%;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+    
+        .heart-icon{
+            margin-top: -10px;
+        }
+
+}
+
+#our-customers{
+    h1{
+        margin-top: 70px;
+    }
+}

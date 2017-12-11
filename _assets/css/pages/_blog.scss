@@ -1,0 +1,320 @@
+#blog {
+    background: #323a45 url(/img/texture/texture.svg);
+    .wrapper{
+        background-color: #fff;
+    }
+
+    .blog-header{
+        margin-bottom: 40px;
+        @media (max-width: 820px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .newsletter{
+        margin: 40px auto 70px;
+        @media (max-width: 820px) {
+            margin: 0 auto;
+        }
+        @media (max-width: 440px) {
+            text-align: center;
+        }
+    }
+
+    i.post-category {
+        text-transform: uppercase;
+        color: #bebebe;
+        font-style: normal;
+        text-align: center;
+        font-size: rem-calc(14);
+        display: block;
+        padding: rem-calc(12 5);
+        margin: rem-calc(10 0);
+
+        &:before, &:after {
+            content: "  \2014  ";
+        }
+    }
+
+    #post {
+        .row {
+            width: rem-calc(700);
+            margin: 0 auto;
+            @media (max-width: 700px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .container-mini{
+        max-width: 830px;
+        text-align: left;
+        margin-top: 60px;
+
+        @media (max-width: 768px) {
+            margin: 0 25px;
+        }
+    }
+    
+
+    .subscribe-btn{
+        width: 110px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: #3d84a8;
+        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        padding: 0;
+        margin: -5px 0 0;
+        @media(max-width: $screen-sm) {
+             margin: 10px 1px;
+        }
+    }
+
+    .posts {
+       // width: 1280px;
+        margin: 0 90px;
+        column-gap: 2em;
+        column-count: 3;
+        @media(min-width: 1440px) {
+            width: 1280px;
+            margin: 0 auto rem-calc(60);
+        }
+        @media(max-width: 1200px) {
+            column-count: 2;
+        }
+        @media(max-width: $screen-sm) {
+            column-count: 1;
+            margin: 0 50px 30px;
+        }
+        @media(max-width: 440px) {
+            column-count: 1;
+            margin: 0 30px 30px;
+        }
+
+        .post {
+            margin-bottom: 25px;
+            border-radius: 2px;
+            border: solid 1px #f2f2f2;
+            padding: 0;
+            //overflow: hidden;
+            display: inline-block;
+            break-inside: avoid-column;
+            width: 100%;
+
+            @media (max-width: $screen-sm-max) {
+                text-align: center;
+
+                > div {
+                    height: rem-calc(350);
+                }
+            }
+        }
+    }
+
+    article {
+        font-size: rem-calc(20);
+        color: #303030;
+        h2, h3 {
+            font-size: 24px;
+	        font-weight: bold;
+            margin: rem-calc(45 0);
+            font-family: $headings-font-family;
+            line-height: 1.5;
+        }
+
+        img {
+            margin: rem-calc(0 0 25);
+        }
+
+        p {
+            color: #303030;
+            line-height: 1.5;
+            strong {
+                margin: rem-calc(45 0);
+            }
+        }
+        @media (max-width: $screen-sm-max) {
+            p{
+                font-size: rem-calc(16);
+            }
+            h2, h3 {
+                margin: rem-calc(25 0);
+            }
+        }
+    }
+
+    article p em a {
+        color: #303030;
+        display: block;
+        text-align: center;
+        //color: #F5F5F5;
+        font-size: rem-calc(12);
+    }
+}
+
+.post-link {
+    text-decoration:none; 
+    &:hover {
+        text-decoration:none; 
+        cursor:pointer;  
+    }
+}
+.post-data{
+	font-family: "Avenir LT Book", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: oblique;
+	font-stretch: normal;
+	line-height: normal;
+    letter-spacing: normal;
+    color: #9E9E9E;
+}
+.post-details{
+    margin: 16px;
+    text-align: left;
+}
+
+.post-title{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.post-description {
+	font-family: "Avenir LT Book", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+    line-height: 24.0px;
+	letter-spacing: normal;
+    color: #303030;
+}
+.link {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: rem-calc(10);
+    font-size: rem-calc(16);
+}
+
+.post-image {
+    height: rem-calc(220);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 2px;
+}
+
+.post-category{
+    margin: 0;
+    padding: 2px 10px 0;
+    font-size: 16px;
+    height: 25px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.category-theme{
+    background-color: #46cdcf;
+}
+
+.filter{
+    display: flex;
+    width: 350px;
+    margin: 0 auto rem-calc(30);
+    button{
+        background: none;
+        border: none;
+        font-family: "Avenir LT Book", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        text-transform:capitalize;
+        font-weight: 300;
+        text-align: center;
+        padding: 8px 20px;
+        color: rgba(0, 0, 0, 0.87);
+        &:focus{
+            outline: 0;
+        }
+    }
+}
+.filter-active {
+    box-shadow: inset 0 -3px 0 0 #46cdcf;
+   // padding: 0 20px;
+}
+
+
+.hidden {
+    display: none!important;
+    visibility: hidden!important;
+  }
+
+//post
+.page-title {
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-size: 36px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+    color: #303030;
+    @media(max-width: 768px){
+        margin-top: rem-calc(120) !important;
+    }
+}
+.page-detail {
+	font-family: "Avenir LT Book", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: oblique;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #9E9E9E;
+}
+
+.page-image {
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @media(max-width: $screen-sm){
+        height: 220px;
+    }
+}
+
+//Related posts
+.related-articles {
+	font-family: "Avenir LT Book", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-align: left;
+	color: #b2b2b2;
+}
+
+.related-posts {
+    display: flex;
+    margin-bottom: 100px;
+    @media(max-width: $screen-sm){
+        display: block;
+    }
+
+}
+
+.page-separate {
+    border: solid 1px #f2f2f2;
+}
+
+.related-post {
+    border-radius: 2px;
+    border: solid 1px #f2f2f2;
+    width: 50%;
+    margin-bottom: 2.5rem;
+    @media(max-width: $screen-sm){
+        width: 100%;
+    }
+    &:first-child {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,95 @@
+@mixin plain-input() {
+	border: 0;
+    background: white;
+    border-radius: rem-calc(3);
+    padding: rem-calc(10 15);
+    width: rem-calc(200);
+    margin: 0 rem-calc(10) 0 0;
+    color: rgba(0,0,0,0.4);
+}
+
+@mixin header-border() {
+	content: " ";
+    width: rem-calc(180);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: rem-calc(-90);
+    background: rgba(0,0,0,0.07);
+    height: rem-calc(4);
+    border-radius: rem-calc(2);
+}
+
+@mixin faq() {
+    #questions {
+
+        >.container >h2 {
+            position: relative;
+            font-size: rem-calc(30);
+            line-height: rem-calc(70);
+             color: $sagent-header;
+
+            font-family: $headings-font-family;
+            margin: rem-calc(75 0 55);
+            text-align: center;
+
+            &:after {
+                @include header-border();
+            }
+        }
+
+        .container {
+            max-width: 1280px;
+            margin-bottom: rem-calc(100);
+        }
+
+        .question {
+            background: $text-5;
+            position: relative;
+            border-radius: rem-calc(5);
+
+            .toggle {
+                content: " ";
+                position: absolute;
+                top: rem-calc(10);
+                right: rem-calc(10);
+                width: rem-calc(20);
+                height: rem-calc(20);
+                background: url(../img/faq/minus.svg);
+
+                cursor: pointer;
+            }
+
+            h2 {
+                font-family: Montserrat, Helvetica, Arial, sans-serif;
+                margin: rem-calc(10 0);
+                font-size: rem-calc(18);
+                cursor: pointer;
+                color: $text-2;
+            }
+
+            .answer {
+                overflow: hidden;
+                transition: height 0.25s ease-in;
+                margin: rem-calc(0 0 10);
+            }
+
+            &.closed {
+                background: transparent;
+
+                .answer {
+                    height: 0;
+                }
+
+                .toggle {
+                    background: url(../img/faq/plus.svg);
+                }
+            }
+        }
+
+        .row {
+            margin-top: rem-calc(10);
+        }
+
+    }
+}

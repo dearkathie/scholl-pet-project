@@ -1,0 +1,67 @@
+#notfound {
+
+	background: $sagent-header url(/img/texture/texture.svg);
+	.wrapper{
+		background: #fff url('/img/texture/demo-background.png');
+
+	}
+	h1{
+		font-size: 36px;
+		color: #303030;
+		@media(max-width: $screen-sm) {
+			font-size: 24px;
+		}
+	}
+	ul.reasons{
+		width: 440px;
+		@media(max-width: 440px) {
+			width: 250px;
+		}
+		@media(max-width: $screen-sm) {
+			width: 270px;
+		}
+	}
+	.reasons {
+		width: 470px;
+		text-align: left;
+		margin: 12px auto;
+		color: #303030;
+		@media(max-width: $screen-sm) {
+			width: 300px;
+		}
+	}
+	.notfound-img{
+		@media(max-width: $screen-sm) {
+			margin-top: 50px;
+		}
+	}
+
+	.notfound-img{
+		max-width: 1020px;
+		margin: -60px auto 0;
+		@media(max-width: $screen-sm) {
+			margin: 80px auto 0;
+		}
+	}
+	
+
+	.notfound-text{
+		margin: -400px auto 175px;
+		text-align: center;
+	
+
+		@media(max-width:$screen-lg){
+			margin: -445px auto 150px;
+		}
+		@media(max-width: $screen-md){
+			margin: -405px auto 225px;
+		}
+	
+		@media(max-width: $screen-sm) {
+			margin: -285px auto 80px;
+		}
+		@media(max-width: 440px) {
+			margin: -140px auto 115px;
+		}
+	}
+}

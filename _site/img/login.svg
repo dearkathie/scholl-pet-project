@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="30px" viewBox="0 0 31 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_account_circle_black_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-965.000000, -61.000000)">
+            <g id="ic_account_circle_black_24px" transform="translate(962.000000, 58.000000)">
+                <path d="M18.5,3 C9.944,3 3,9.72 3,18 C3,26.28 9.944,33 18.5,33 C27.056,33 34,26.28 34,18 C34,9.72 27.056,3 18.5,3 Z M18.5,7.5 C21.073,7.5 23.15,9.51 23.15,12 C23.15,14.49 21.073,16.5 18.5,16.5 C15.927,16.5 13.85,14.49 13.85,12 C13.85,9.51 15.927,7.5 18.5,7.5 Z M18.5,28.8 C14.625,28.8 11.1995,26.88 9.2,23.97 C9.2465,20.985 15.4,19.35 18.5,19.35 C21.5845,19.35 27.7535,20.985 27.8,23.97 C25.8005,26.88 22.375,28.8 18.5,28.8 Z" id="Shape" fill="#000051" fill-rule="nonzero"></path>
+                <polygon id="Shape" points="0 0 37 0 37 36 0 36"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

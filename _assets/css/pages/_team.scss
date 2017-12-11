@@ -1,0 +1,59 @@
+#team {
+    .members {
+        margin-top: 50px;
+        width: 1000px;
+        @media(min-width: 1280px) {
+            width: 1280px;
+        }
+        @media(max-width: 1024px) {
+            width: 100%;
+        }
+        @media(max-width: 992px){
+            width: 750px;
+        }
+        @media(max-width: 768px) {
+            width: 100%;
+        }
+            > div {
+                text-align: center;
+                margin-bottom: rem-calc(30);
+                @media(max-width: 640px) {
+                    width: 100%;
+                }
+                h2 {
+                    margin-bottom: 8px;
+                }
+                h3 {
+                    margin: 0 auto;
+                }
+                .member-photo {
+                    object-position: 0 0;
+                    width:300px; 
+                    margin: 0 auto;   
+                    background-size: cover;
+                    background-position-x: center;
+                    height:330px;
+                }
+            }
+        }
+    }
+
+
+#about {
+    .capabilities{
+        margin: 0 auto;
+    }
+    .about-us{
+        width: 100% !important;
+    }
+    .our-mission{
+        padding-top: 20px;
+        max-width: 700px;
+        padding-bottom: 100px;
+
+        @media(max-width: 440px) {
+            padding-bottom: 0;
+        }
+    }
+
+} 

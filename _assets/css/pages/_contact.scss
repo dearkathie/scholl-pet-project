@@ -1,0 +1,144 @@
+#contact {
+	background: $sagent-header url(/img/texture/texture.svg);
+	#contact-form{
+		background: #fff;
+	}
+	#contact-form .container {
+		padding-bottom: rem-calc(100);
+		margin: 0 90px;
+		@media(max-width: 992px){
+			margin: 0;
+		}
+		@media(min-width: 1440px) {
+			width: 1280px;
+			margin: 0 auto;
+			padding: rem-calc(100 0 300);
+		}
+        .address {
+			order: 2;
+            text-align: left;
+            padding-top: rem-calc(50);
+        }
+		.row{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.contact-fields{
+			order: 1;
+		}
+        @media(min-width: $screen-md) {
+
+            .row {
+				display: block;
+                > div:first-child {
+                    padding-right: rem-calc(30);
+                }
+                > div:nth-child(2) {
+                    padding-left: rem-calc(30);
+                }
+
+            }
+
+            .address {
+				text-align: right;
+				padding-top: 0;
+            }
+        }
+
+       
+
+		h1 {
+			font-size: rem-calc(48);
+			font-family: $headings-font-family;
+            color: $text-1;
+			margin: rem-calc(120 0 50);
+            text-align: center;
+		}
+
+        
+
+        address {
+            font-style: normal;
+        }
+
+		form {
+			text-align: left;
+
+			.error-message {
+				display: none;
+				color: #fd554b;
+			}
+			
+			&.error {
+				.error-message {
+					display: block;
+				}
+			}
+
+            input[type=text], input[type=email], textarea {
+                background: $text-5;
+                border-radius: rem-calc(5);
+                margin-bottom: rem-calc(20);
+            }
+
+			input[type=text].error, input[type=email].error, textarea.error {
+				border: rem-calc(2) solid #fd554b;
+			}
+
+            input[type=submit] {
+                width: rem-calc(170);
+            }
+
+            textarea {
+                margin-bottom: rem-calc(5);
+            }
+
+			
+
+		}
+
+		label {
+			display: block;
+			font-size: rem-calc(12);
+			margin: rem-calc(10 0);
+		}
+
+		input[type=text], input[type=email], textarea {
+			@include plain-input();
+			width: 100%;
+		}
+
+		textarea {
+			height: rem-calc(365);
+		}
+	}
+
+
+	#gmap_canvas {
+		height: rem-calc(355);
+        text-align: left;
+	}
+
+	#complete-contact-message{
+		color: #303030;
+		font-size: 20px;
+		
+		.complete-message {
+			display: none;
+		}
+
+		.complete {
+			display: block;
+		}
+		p{
+			margin-top: 0;
+			color: #303030;
+			font-size: 24px;
+		}
+		img{
+			padding-right: 10px;
+			padding-bottom: 4px;
+		}
+	}
+}

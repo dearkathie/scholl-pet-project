@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="23px" viewBox="0 0 34 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-891.000000, -65.000000)" fill-rule="nonzero" fill="#000051">
+            <g id="ic_visibility_black_24px" transform="translate(889.000000, 58.000000)">
+                <path d="M19,7 C11.2727273,7 4.67363636,11.7686667 2,18.5 C4.67363636,25.2313333 11.2727273,30 19,30 C26.7272727,30 33.3263636,25.2313333 36,18.5 C33.3263636,11.7686667 26.7272727,7 19,7 Z M19,26.1666667 C14.7345455,26.1666667 11.2727273,22.732 11.2727273,18.5 C11.2727273,14.268 14.7345455,10.8333333 19,10.8333333 C23.2654545,10.8333333 26.7272727,14.268 26.7272727,18.5 C26.7272727,22.732 23.2654545,26.1666667 19,26.1666667 Z M19,13.9 C16.4345455,13.9 14.3636364,15.9546667 14.3636364,18.5 C14.3636364,21.0453333 16.4345455,23.1 19,23.1 C21.5654545,23.1 23.6363636,21.0453333 23.6363636,18.5 C23.6363636,15.9546667 21.5654545,13.9 19,13.9 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+#faq {
+
+	#header {
+
+        .effective {
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.5);
+        }
+
+        p {
+            text-transform: uppercase;
+            color: #b8b8b8;
+            font-size: rem-calc(20);
+        }
+        
+	}
+
+    @include faq();
+
+}
+
+#legal{
+    background: #343a45 url(/img/texture/texture.svg);
+
+    .legal-text{
+        background: white;
+    }
+    #questions{
+        .container{
+            padding-bottom: 10rem;
+            margin-bottom: 0;
+        }
+    }
+    @include faq();
+}
