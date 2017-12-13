@@ -1,0 +1,43 @@
+.about{
+    display: block;
+    width: 980px;
+
+    h2{
+        color: #000051;
+        font-family: Roboto;
+        font-size: 20px;
+        text-align: center;
+
+    }
+    p{
+        color: #59565A;
+        font-family: Roboto;
+        font-size: 14px;
+    }
+    ul{
+        li{
+            color: #59565A;
+            font-family: Roboto;
+            font-size: 14px;
+            display: block; 
+        }
+    }
+    span{
+        color: #3F51B5;
+        font-family: Roboto;
+        font-size: 14px;
+    }
+
+    .creators{
+        margin: 40px 0;
+    }
+
+    .about-school, .major-dates{
+        margin: 60px 0; 
+    }
+    .about-school{
+        p{
+            margin: 20px 0;
+        }
+    }
+}

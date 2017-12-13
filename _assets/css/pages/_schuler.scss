@@ -1,0 +1,20 @@
+.schuler{
+    display: block;
+    width: 980px;
+    margin: 40px auto 80px;
+    
+    .hello-text{
+        text-align: center;
+        p{
+            color: #59565A;
+            font-family: Roboto;
+            font-size: 14px; 
+        }
+    }
+    .submenu{
+        margin: 60px auto;
+        li{
+            display: inline;
+        }
+    }
+}

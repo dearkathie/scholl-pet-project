@@ -8,7 +8,7 @@
   <loc>http://gou515.spb.ru/</loc>
 </url>
 <url>
-  <loc>http://gou515.spb.ru/info-oo/</loc>
+  <loc>http://gou515.spb.ru/schoolinfo/</loc>
 </url>
 <url>
   <loc>http://gou515.spb.ru/achivements/</loc>
@@ -32,7 +32,7 @@
   <loc>http://gou515.spb.ru/parents/</loc>
 </url>
 <url>
-  <loc>http://gou515.spb.ru/students/</loc>
+  <loc>http://gou515.spb.ru/schulers/</loc>
 </url>
 <url>
   <loc>http://gou515.spb.ru/activity/</loc>
@@ -57,6 +57,18 @@
 </url>
 <url>
   <loc>http://gou515.spb.ru/attestaion/</loc>
+</url>
+<url>
+  <loc>http://gou515.spb.ru/stuff/</loc>
+</url>
+<url>
+  <loc>http://gou515.spb.ru/behaviorrules/</loc>
+</url>
+<url>
+  <loc>http://gou515.spb.ru/attestation/</loc>
+</url>
+<url>
+  <loc>http://gou515.spb.ru/uniform/</loc>
 </url>
 <url>
   <loc>http://gou515.spb.ru/museum/</loc>
