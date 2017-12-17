@@ -25,9 +25,9 @@ body {
 }
 
 a {
-    color: $highlight-3;
+    color: $header-secondary-color;
     &:hover {
-        color: $highlight-4;
+        color: $text-hover;
     }
 }
 

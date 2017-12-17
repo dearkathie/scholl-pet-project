@@ -11,21 +11,21 @@
 
     &:hover, &:focus {
         color: white;
-        background: $primary-2-hover;
+        background: $text-hover;
     }
 
     &:active {
         color: white;
-        background: $primary-2-hover;
+        background: $text-hover;
     }
 
     outline: none !important;
-    background: $highlight-2;
+    background:  $header-secondary-color;
 
 
     &.empty {
         background: none;
-        color: $primary-2;
+        color: $header-secondary-color;
         box-shadow: none;
 
         margin-left: -30px;

@@ -1,0 +1,46 @@
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.header{
+    margin: 0 auto;
+    display: flex;  
+    width: 1280px;
+    position: relative;
+    .header-logo{
+        top: 50px;
+        position: absolute;
+        left: 0;
+        .header-logo-image{
+            width: 90px;
+            height: 90px;
+        }
+    }
+    
+    .header-title{
+
+        margin: 40px auto 0;
+
+        .header-title-text{
+            width: 510px;
+            color: #000051;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 24px;
+
+        }
+    }
+
+    .header-active-icons{
+        top: 60px;
+        position: absolute;
+        right: 0;
+        .header-login-icon{
+            margin-right: 20px;
+        }
+    }
+}

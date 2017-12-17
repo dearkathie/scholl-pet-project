@@ -1,5 +1,4 @@
 @import "bootstrap";
-@import "fonts";
 @import "functions";
 @import "colors";
 @import "buttons";
@@ -30,16 +29,16 @@ body {
 }
 
 a {
-    color: $highlight-3;
+    color: $header-secondary-color;
     &:hover {
-        color: $highlight-4;
+        color: $header-secondary-color;
     }
 }
 
 ul {
     padding: 0;
+    list-style-type: none;
 }
-
 h1, h2, h3 {
     font-weight: 300;
     color: $text-1;
@@ -87,7 +86,8 @@ img {
 
 @import "navbar";
 @import "footer";
-@import "style";
+@import "header";
 @import "pages/home";
 @import "pages/about";
 @import "pages/schuler";
+@import "pages/contact";

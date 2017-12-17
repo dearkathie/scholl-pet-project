@@ -1,18 +1,18 @@
-#contact {
-	background: $sagent-header url(/img/texture/texture.svg);
+#contacts {
+	width: 980px;
+    margin: 0 auto;
+    display: block;
 	#contact-form{
 		background: #fff;
-	}
-	#contact-form .container {
+
 		padding-bottom: rem-calc(100);
 		margin: 0 90px;
 		@media(max-width: 992px){
 			margin: 0;
 		}
 		@media(min-width: 1440px) {
-			width: 1280px;
 			margin: 0 auto;
-			padding: rem-calc(100 0 300);
+			padding: rem-calc(0 50 0 0);
 		}
         .address {
 			order: 2;
@@ -64,7 +64,7 @@
 
 		form {
 			text-align: left;
-
+			width: 500px;
 			.error-message {
 				display: none;
 				color: #fd554b;
@@ -77,7 +77,7 @@
 			}
 
             input[type=text], input[type=email], textarea {
-                background: $text-5;
+                border: 1px solid $text-1;
                 border-radius: rem-calc(5);
                 margin-bottom: rem-calc(20);
             }
@@ -113,11 +113,14 @@
 			height: rem-calc(365);
 		}
 	}
-
+	.contact-additional{
+		display: flex;
+		margin-top: 80px;
+	}
 
 	#gmap_canvas {
-		height: rem-calc(355);
-        text-align: left;
+		height: 350px;
+		width: 350px;
 	}
 
 	#complete-contact-message{
