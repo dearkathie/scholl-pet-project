@@ -1,21 +1,23 @@
 var Main = {
 	gmap: $('#gmap_canvas'),
 	maps: function() {
+	
 	    if(Main.gmap.length) {
 	    	Main.loadMapsScript();
 	    }
 	},
 	loadMapsScript: function() {
+		
 	  var script = document.createElement('script');
 	  script.type = 'text/javascript';
 	  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
-	      '&key=AIzaSyAnqPtX4niilu-1QFi-q6MaMXPibVFB780&callback=Main.initMaps';
+	      '&key=AIzaSyA4O-tIUQjMlly1wgWTU-TP5H0MHhLa8gs&callback=Main.initMaps&language=ru&region=RU';
 	  document.body.appendChild(script);
 	},
 	initMaps: function() {
 		var myOptions = {
             zoom: 14,
-            center: new google.maps.LatLng(52.377113, 4.920359),
+            center: new google.maps.LatLng(59.94591,30.4153683),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			styles: [
 				{
@@ -82,28 +84,20 @@ var Main = {
 				"elementType": "all",
 				"stylers": [
 					{
-						"color": "#46CDCF"
+						"color": "#41b3d3"
 					}
 				]
 			}
 			]
         };
-		var map = new google.maps.Map(Main.gmap[0], myOptions);
-		var pinIcon = new google.maps.MarkerImage(
-			'/img/icons/pin.svg',
-			null, 
-			null, 
-			null, 
-			new google.maps.Size(18, 26)
-		);  
+		var map = new google.maps.Map(Main.gmap[0], myOptions); 
         var marker = new google.maps.Marker({
             map: map,
-			position: new google.maps.LatLng(52.377113, 4.920359),
-			icon: pinIcon
+			position: new google.maps.LatLng(59.94591,30.4153683),
+			
 		});
-        var content = $('address').html();
         var infowindow = new google.maps.InfoWindow({
-            content: "<div class='gmaps-infocontent'>"+content+"</div>"
+            content: "<div class='gmaps-infocontent'>"+" Школа №515 с углублённым изучением немецкого языка имени Иоганна Вольфганга Гёте"+"</div>"
         });
         google.maps.event.addListener(marker, "click", function() {
             infowindow.open(map, marker);
@@ -143,7 +137,7 @@ var Main = {
 				});
 
 				$.ajax({
-				    url: "//formspree.io/info@crobox.com", 
+				    url: "//formspree.io/eshelevakho@gmail.com", 
 				    method: "POST",
 				    data: data,
 				    dataType: "json"
@@ -210,129 +204,14 @@ var Main = {
 			});
 		}
 	},
-	requiredSignUp: function(){
-		$('#signup-form input').on('change invalid', function(e){
-			e.preventDefault();
-			var textfield = $(this).get(0);
-
-			if (!textfield.validity.valid) {
-				$(this).addClass('required');  
-				$(this).next().css({'opacity':'1'});  
-			}	
-		})
-
-		$('#signup-form input').focusout(function() {
-    		if (! $(this).val() ) {
-				$(this).addClass('required');  
-				$(this).next().css({'opacity':'1'});  
-   			} else {
-				$(this).removeClass('required');  
-				$(this).next().css({'opacity':'0'});   
-			   }
-		});
-
-		$("#signup-form").submit(function(e) {
-			e.preventDefault();
-			
-			var form = $(this);
-
-			var data = {};
-			var valid = true;
 
 
-				form.serializeArray().forEach(function(input) {
-					data[input.name] = input.value;
-				});
-				
-				$.ajax({
-				    url: "https://formspree.io/sales@crobox.com", 
-				    method: "POST",
-				    data: data,
-				    dataType: "json"
-				})
-				.done(function( data ) {
-					if(data.success) {
-						$("#form-message").addClass('hide');
-						$('#complete-message').addClass('show'); 
-					}
-				});
-
-		});
-
-
-	},
-
-	features: function() {
-		$('#feature-set li').click(function() {
-			$('#feature-set li').removeClass('active');
-			$(this).addClass('active');
-
-			$('#feature-set video').first().attr('src', $(this).attr('data-video'));
-		});
-	},
-	demo: function() {
-		$('.demo').click(function(e) {
-			e.preventDefault();
-			if($(e.currentTarget).hasClass('subscribe')) {
-				document.cookie = 'viewedOuibounceModal=; Path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-				setTimeout(function() {
-					window.exitintent.fire();
-				}, 100);
-				
-			} else {
-				
-				$('#signup').addClass("show");
-				$('#signup').removeClass("hidden");
-			}
-			var offcanvas = $('.navbar-offcanvas').data('bs.offcanvas');
-			if(offcanvas) offcanvas.hide();
-		});
-
-
-		$(document).on('animationend', "#signup", 
-		    function (evnt) {
-		        var $faded = $(evnt.target);
-		        if (!$faded.hasClass("show")) {
-		            $faded.addClass("hidden");
-		            $faded.removeClass("hider");
-		        }
-		});
-	},
-
-	subscriptionPost: function(){
-
-		$('#newsletter input').on('change invalid', function(e){
-			e.preventDefault();
-			var textfield = $(this).get(0);
-
-			if (!textfield.validity.valid) {
-				$(this).addClass('required');  
-				$('p.required-error').css({'opacity':'1'});
-			} else {
-				$(this).removeClass('required');  
-				$('p.required-error').css({'opacity':'0'});
-			}
-		})
-
-		$("#newsletter").submit(function(e) {
-			$("#newsletter").addClass('hide');
-			$('#subscription-success').addClass('show'); 
-		})
-	},
 
 }
 
 $(document).ready(function() {
 	Main.maps();
-	Main.scrollMenu();
-	Main.subscriptionPost();
 	Main.questions();
-	Main.features();
-	Main.demo();
 	Main.mailforms();
 
-	Main.requiredSignUp();
-
-	// window.openDemo = Main.openDemo;
-	// window.closeDemo = Main.closeDemo;
 });

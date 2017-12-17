@@ -4,26 +4,44 @@ description: Школа №515 с углублённым изучением не
 layout: default
 id: contacts
 ---
-<div class="container contacts">
+<div class="container" id="contacts">
     <div class="contact-details">
-        <h2>
+        <h2 class="school-name">
             Государственное бюджетное общеобразовательное учреждение
             средняя общеобразовательная школа №515 с углубленным изучением иностранных языков
             имени Иоганна Вольфганга Гёте (Гётешуле)
             Красногвардейского района Санкт-Петербурга
         </h2>
-        <p>
+        <p class="school-adress">
             Адрес:Россия 195027, Санкт-Петербург, ул. Шепетовская, д. 5, литер А
         </p>
         <div class="contact-info">
-            <p> Директор: Монахова Ирина Евгеньевна </p>
-            <p> Телефон: (812) 224-20-31, (812)224-36-76</p>
-            <p>Факс: (812) 224-20-31</p>
-            <p>E-mail: mail@gou515.spb.ru (или mail@s515.ru)</p>
+                <p>  <span>Директор: </span>Монахова Ирина Евгеньевна </p>
+                <p>  <span>Телефон:</span> (812) 224-20-31, (812)224-36-76</p>
+                <p>  <span>Факс:</span>(812) 224-20-31</p>
+                <p>  <span>E-mail:</span>
+                    <a href="mailto:mail@gou515.spb.ru " target="_top">mail@gou515.spb.ru</a> (или 
+                    <a href="mailto:mail@s515.ru" target="_top">mail@s515.ru</a>)</p>
         </div>
     </div>
     <div class="contact-additional">
-        <div class="contact-form"> </div>
-        <div class="contact-map"> </div>
+        <div class="contact-form">
+                <form class="mail" onsubmit="parent.scrollTo(0, 0); return true">
+                        <p class="error-message">Заполните все поля</p>
+                        <input type="text" id="name" name="name" placeholder="Имя" data-required="true">
+                        <input type="email" id="email" name="email" placeholder="Email" data-required="true">
+                        <textarea id="message" name="message" data-required="true" placeholder="Обращение"></textarea>
+                        <input type="submit" class="btn shadow" value="Отправить">
+                        <input type="hidden" name="type" value="contact">
+                    </form>
+    
+                    <!-- <div id="complete-contact-message">
+                        <span class="complete-message">
+                            <p><img src="/img/icons/done.svg">Success!</p>
+                            Your message has been received. We will respond to you shortly.
+                        </span>  
+                    </div> -->
+        </div>
+        <div id="gmap_canvas"></div>
     </div>
 </div>

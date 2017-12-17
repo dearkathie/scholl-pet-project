@@ -7,23 +7,11 @@
   <link type="text/css" rel="stylesheet" href="/assets/main.css">
   
   <!-- <link rel="canonical" href="https://crobox.comhttp://localhost:4000/about/"> -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/favicons/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+  <link rel="icon" type="image/png" href="/favicons/goethe-schule.png" sizes="16x16">
+  
   <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-TileImage" content="/favicons/goethe-schule.png">
   <meta name="theme-color" content="#343a45">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
@@ -31,26 +19,6 @@
   <script type="text/javascript" src="http://esir.gov.spb.ru/static/widget/js/widget.js" charset="utf-8"></script>
 </head>
 
-
-<div class="container">
-    <div class="header">
-  <div class="header-logo">
-      <img src="/img/goethe-schule.png" class="header-logo-image"/>
-  </div>
-
-  <div class="header-title">
-      <h1 class="header-title-text">
-          Школа №515 </br>
-           с углублённым изучением немецкого языка </br>
-           имени Иоганна Вольфганга Гёте (Гётешуле)
-      </h1>
-  </div>
-  <div class="header-active-icons">
-      <img src="/img/login.svg" class="header-login-icon"/>
-      <img src="/img/visibility.svg" /class="header-visibility-icon">
-  </div>
-</div>
-</div>
 
 <nav class="navbar">
     <div id="menu-navbar">
@@ -238,9 +206,8 @@
             </div>
             <div class="footer-title">
                 <ul>
-                    <li><a href="/">Контакты</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
                     <li><a href="/">Телефон доверия</a></li>
-                    <li><a href="/">Обратная связь</a></li>
                     <li><a href="/">Антиррупция</a></li>
                 </ul>
             </div>
@@ -276,5 +243,15 @@
             </div>
     </div>
 </footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).click(function(e) {
+    if (!$(e.target).is('#menu-navbar')) {
+      $("#menu-navbar").collapse('hide');
+    }
+});
+</script>
+<script type="text/javascript" src="/assets/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/main.js"></script>
 
 

@@ -8,9 +8,8 @@
             </div>
             <div class="footer-title">
                 <ul>
-                    <li><a href="/">Контакты</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
                     <li><a href="/">Телефон доверия</a></li>
-                    <li><a href="/">Обратная связь</a></li>
                     <li><a href="/">Антиррупция</a></li>
                 </ul>
             </div>
@@ -46,3 +45,13 @@
             </div>
     </div>
 </footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).click(function(e) {
+    if (!$(e.target).is('#menu-navbar')) {
+      $("#menu-navbar").collapse('hide');
+    }
+});
+</script>
+{% js bootstrap.min.js %}
+{% js main.js %}
