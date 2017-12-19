@@ -1964,7 +1964,7 @@ img {
   border: 0;
   z-index: 20;
   margin: 20px 0;
-  background: #CBFAEF; }
+  background: #E1F5FC; }
   .navbar #menu-navbar {
     padding: 10px 0;
     width: 800px;
@@ -2105,16 +2105,19 @@ img {
 
 .site-footer {
   padding: 0;
-  background: #CBFAEF; }
+  background: #E1F5FC; }
   .site-footer .footer-row {
     width: 1280px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding: 20px 0; }
   .site-footer .footer-title, .site-footer .social, .site-footer .footer-img {
     width: 210px;
     margin-right: 40px; }
+  .site-footer .footer-title, .site-footer .social {
+    padding: 30px 0; }
   .site-footer .logo-footer {
     margin-top: 0; }
   .site-footer .footer-img {
@@ -2126,8 +2129,14 @@ img {
   .site-footer .social-link {
     width: 20px;
     margin: 0 20px; }
+    .site-footer .social-link img {
+      width: 20px;
+      margin-bottom: 20px; }
   .site-footer li a {
     color: #000051; }
+  @media (max-width: 1024px) {
+    .site-footer .footer-img {
+      display: none; } }
 
 .container {
   width: 1280px;
@@ -2164,6 +2173,40 @@ img {
     right: 0; }
     .header .header-active-icons .header-login-icon {
       margin-right: 20px; }
+
+#behaviorrules {
+  width: 980px;
+  margin: 0 auto;
+  display: block; }
+  #behaviorrules .behaviorrules-title {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #000051;
+    text-align: center;
+    margin: 40px; }
+  #behaviorrules ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0; }
+  #behaviorrules li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em; }
+  #behaviorrules li:before {
+    content: counters(item,".") ". ";
+    display: table-cell;
+    padding-right: 0.6em; }
+  #behaviorrules li li {
+    margin: 0; }
+  #behaviorrules li li:before {
+    content: counters(item,".") " "; }
+  #behaviorrules ul {
+    list-style-type: none; }
+  #behaviorrules ul li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -20px; }
 
 .main-page {
   display: block;

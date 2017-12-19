@@ -1,15 +1,18 @@
 .site-footer{
     padding: 0;
-
     background: $menu-backgroung-color;
     .footer-row{
         width: 1280px;
         margin: 0 auto;
         display: flex;
+        padding: 20px 0;
     }
     .footer-title, .social, .footer-img{
         width: 210px;
         margin-right: 40px;
+    }
+    .footer-title, .social{
+        padding: 30px 0;
     }
     .logo-footer{
         margin-top: 0;
@@ -26,9 +29,20 @@
     .social-link{
         width: 20px;
         margin: 0 20px;
+        img{
+            width: 20px;
+            margin-bottom: 20px;
+        }
     }
     li a{
         color:$header-main-color;
+    }
+
+
+    @media (max-width: 1024px) {
+        .footer-img{
+            display: none;
+        }
     }
 }
 

@@ -1,0 +1,55 @@
+
+#behaviorrules {
+	width: 980px;
+    margin: 0 auto;
+    display: block;
+
+    .behaviorrules-title{
+        font-family: Roboto;
+        font-size: 20px;
+        color:#000051;
+        text-align: center;
+        margin: 40px;
+    }
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+        display: table;
+        counter-increment: item;
+        margin-bottom: 0.6em;
+      }
+      
+      li{
+        &:before {
+            content: counters(item, ".") ". ";
+            display: table-cell;
+            padding-right: 0.6em;    
+        }
+      }
+      li li {
+          margin: 0;
+      }
+      
+      li li{
+        &:before {
+            content: counters(item, ".") " ";
+        }
+      }
+
+      ul {
+        list-style-type: none;
+      }
+      
+      ul li{
+        &:before {
+            content: '\2014';
+            position: absolute;
+            margin-left: -20px;
+        }
+    }
+}
