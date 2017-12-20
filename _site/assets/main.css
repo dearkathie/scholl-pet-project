@@ -199,7 +199,7 @@ html {
 
 body {
   font-family: "Avenir LT Book", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.428571429;
   color: #333333;
   background-color: #fff; }
@@ -253,8 +253,8 @@ img {
   border-radius: 50%; }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-top: 1px solid #eeeeee; }
 
@@ -976,7 +976,7 @@ hr {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.428571429;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -1199,19 +1199,19 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-lg {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.3333333;
   border-radius: 6px; }
 
 .btn-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
 .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -1258,7 +1258,7 @@ input[type="button"].btn-block {
     border-color: #337ab7; }
   .nav .nav-divider {
     height: 1px;
-    margin: 9px 0;
+    margin: 10px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
   .nav > li > a > img {
@@ -1267,7 +1267,7 @@ input[type="button"].btn-block {
 .navbar {
   position: relative;
   min-height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
     content: " ";
@@ -1377,9 +1377,9 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   float: left;
-  padding: 20px 10px;
-  font-size: 18px;
-  line-height: 20px;
+  padding: 19px 10px;
+  font-size: 20px;
+  line-height: 22px;
   height: 60px; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
@@ -1414,11 +1414,11 @@ input[type="button"].btn-block {
       display: none; } }
 
 .navbar-nav {
-  margin: 10px -10px; }
+  margin: 9.5px -10px; }
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 20px; }
+    line-height: 22px; }
   @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
       position: static;
@@ -1433,7 +1433,7 @@ input[type="button"].btn-block {
       .navbar-nav .open .dropdown-menu .dropdown-header {
         padding: 5px 15px 5px 25px; }
       .navbar-nav .open .dropdown-menu > li > a {
-        line-height: 20px; }
+        line-height: 22px; }
         .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
           background-image: none; } }
   @media (min-width: 768px) {
@@ -1443,12 +1443,12 @@ input[type="button"].btn-block {
       .navbar-nav > li {
         float: left; }
         .navbar-nav > li > a {
-          padding-top: 20px;
-          padding-bottom: 20px; } }
+          padding-top: 19px;
+          padding-bottom: 19px; } }
 
 .navbar-text {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-top: 19px;
+  margin-bottom: 19px; }
   @media (min-width: 768px) {
     .navbar-text {
       float: left;
@@ -2232,16 +2232,16 @@ img {
   .about p {
     color: #59565A;
     font-family: Roboto;
-    font-size: 14px; }
+    font-size: 16px; }
   .about ul li {
     color: #59565A;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 16px;
     display: block; }
   .about span {
     color: #3F51B5;
     font-family: Roboto;
-    font-size: 14px; }
+    font-size: 16px; }
   .about .creators {
     margin: 40px 0; }
   .about .about-school, .about .major-dates {
@@ -2258,13 +2258,37 @@ img {
     .schuler .hello-text p {
       color: #59565A;
       font-family: Roboto;
-      font-size: 14px; }
+      font-size: 16px; }
   .schuler .submenu {
     margin: 60px auto;
     text-align: center; }
     .schuler .submenu li {
       display: inline;
       margin: 15px; }
+
+#attestation {
+  display: block;
+  width: 980px;
+  margin: 40px auto 80px; }
+  #attestation ul {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #000051; }
+  #attestation li a {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #59565A;
+    padding: 20px; }
+  #attestation .submenu {
+    margin: 0 auto 60px;
+    text-align: center; }
+    #attestation .submenu li {
+      display: inline;
+      margin: 15px; }
+      #attestation .submenu li a {
+        color: #000051;
+        font-size: 16px;
+        padding: 0; }
 
 #contacts {
   width: 980px;

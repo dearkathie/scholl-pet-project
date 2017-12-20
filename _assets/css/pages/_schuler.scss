@@ -6,9 +6,9 @@
     .hello-text{
         text-align: center;
         p{
-            color: #59565A;
+            color: $text-1;
             font-family: Roboto;
-            font-size: 14px; 
+            font-size: 16px; 
         }
     }
     .submenu{
@@ -17,6 +17,39 @@
         li{
             display: inline;
             margin: 15px;
+        }
+    }
+}
+
+#attestation{
+    display: block;
+    width: 980px;
+    margin: 40px auto 80px;
+    ul{
+        font-family: Roboto;
+        font-size: 16px;
+        color: $header-main-color; 
+    }
+
+    li{
+        a{
+            font-family: Roboto;
+            font-size: 16px;
+            color: $text-1;   
+            padding: 20px;
+        }
+    }
+    .submenu{
+        margin: 0 auto 60px;
+        text-align: center;
+        li{
+            display: inline;
+            margin: 15px;
+            a{
+                color: $header-main-color; 
+                font-size: 16px;
+                padding: 0;
+            }
         }
     }
 }
